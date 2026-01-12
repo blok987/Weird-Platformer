@@ -11,7 +11,8 @@ public class WalkScript : MonoBehaviour
     public Camera cam;
     private bool IsGrounded;
     private bool IsSprint;
-    private Vector2 Movement;
+    public int Sprint;
+    private Vector2 Walk;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
@@ -23,7 +24,7 @@ public class WalkScript : MonoBehaviour
     void Update()
     {
         // takes the local direction of the player and camera and uses 
-        Vector3 direction = cam.transform.forward * Movement.y + cam.transform.right * Movement.x;
+        Vector3 direction = cam.transform.forward * Walk.y + cam.transform.right * Walk.x;
         direction *= MoveSpeed;
         direction.y = rb.linearVelocity.y;
 
@@ -32,7 +33,7 @@ public class WalkScript : MonoBehaviour
 
     public void Move(InputAction.CallbackContext ctx)
     {
-        Movement = ctx.ReadValue<Vector2>();
+        Walk = ctx.ReadValue<Vector2>();
     }
 
     public void Jump(InputAction.CallbackContext ctx)
@@ -59,6 +60,4 @@ public class WalkScript : MonoBehaviour
             IsGrounded = false;
         }
     }
-    //private void 
-    
 }

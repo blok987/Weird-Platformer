@@ -551,6 +551,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 04c52bdfe7e578a4dae4c5b2b8ca73ae, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 04c52bdfe7e578a4dae4c5b2b8ca73ae, type: 3}
+      propertyPath: 'm_Materials.Array.data[0]'
+      value: 
+      objectReference: {fileID: -3033667219593020291, guid: 04c52bdfe7e578a4dae4c5b2b8ca73ae, type: 3}
     - target: {fileID: 919132149155446097, guid: 04c52bdfe7e578a4dae4c5b2b8ca73ae, type: 3}
       propertyPath: m_Name
       value: Rock
@@ -721,8 +729,9 @@ MonoBehaviour:
   rb: {fileID: 730039271}
   JumpHeight: 270
   MoveSpeed: 6
-  SprintSpeed: 0
+  SprintSpeed: 6
   cam: {fileID: 330585545}
+  Sprint: 0
 --- !u!114 &730039277
 MonoBehaviour:
   m_ObjectHideFlags: 0
