@@ -7,7 +7,10 @@ public class WalkScript : MonoBehaviour
     public Rigidbody rb;
     public float JumpHeight;
     public float MoveSpeed;
-
+    public float SprintSpeed;
+    public Camera cam;
+    private bool IsGrounded;
+    private bool IsSprint;
     private Vector2 Movement;
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -19,7 +22,12 @@ public class WalkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        rb.linearVelocity = new Vector3(Movement.x * MoveSpeed, rb.linearVelocity.y, Movement.y * MoveSpeed);
+        // takes the local direction of the player and camera and uses 
+        Vector3 direction = cam.transform.forward * Movement.y + cam.transform.right * Movement.x;
+        direction *= MoveSpeed;
+        direction.y = rb.linearVelocity.y;
+
+        rb.linearVelocity = direction;
     }
 
     public void Move(InputAction.CallbackContext ctx)
@@ -29,11 +37,28 @@ public class WalkScript : MonoBehaviour
 
     public void Jump(InputAction.CallbackContext ctx)
     {
-        if (ctx.performed)
+        if (ctx.performed && IsGrounded)
         {
             rb.AddForce(0, JumpHeight, 0);
 
         }
     }
 
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            IsGrounded = true; 
+        }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Ground"))
+        {
+            IsGrounded = false;
+        }
+    }
+    //private void 
+    
 }
