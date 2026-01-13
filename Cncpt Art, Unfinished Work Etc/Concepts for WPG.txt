@@ -1,0 +1,79 @@
+Concepts for WPG:
+
+Classes-
+
+Exiled
+Highway Man
+Man-At-Arms
+Construct
+Automasmith
+
+
+
+=  Exiled:
+Lore-
+ 	Once the owner of an apothecary and a man of medicine, found themselves on the verge of enlightenment, but was brutalized in an accident resulting from mixing volatile
+chemicals together, and in his last moments he was given revival and immortality at the cost of his humanity, and banished from society after an incident where he cannibalized a
+constable. Now living in the outskirts of society, he survives off of his lands, practices medicine and alchemy, and studies his condition.
+
+Weapons/Specials-
+Powder Pistol; A single shot black powder caplock made custom in his workshop.
+Saber; A reminder of his past as an esteemed member of society, now rejected and feared.
+Daggers; Various Iron and Steel daggers used for a variety of tasks, from cooking
+Various Tonics and Poisons
+Epitome of The Spirit of Exile;
+ 	An ability that once unleashed turns the player into the daimon of exile and atonement. In this mode, the player is a mangled shell of it's self that can consume most
+life forms, or alternatively they can scavenge corpses, or attempt to eat in more conventional means, e.g. attempting to order food from taverns, purchasing items from markets,
+however locals may react adversely to the horrors that are before them. If the player chooses the former option they will have less control over their special and it may abruptly
+occur the player does not frequently meditate and/or frequents areas with higher populations.
+
+= Highway Man:
+Lore-
+ 	An Outlaw who once was hired for protecting and robbing cargo from various Caravans, Trains, and Ferries, skilled in handling firearms, and gunnery. Born in the streets of a great city in a technological boom,
+and a age of silver lining on a rotting, sick, civilization. Once living as a freelancer for stores and various guilds, found home in a band of Mercenaries, now wishes to escape that life, wishing to redeem themselves
+and save society from this brutal period of enslavement and rapid downfall. They must choose whether to try and form their own coalition, or fight the good fight alone.
+
+Weapons/Specials-
+Auto Rifle; a custom made .45-70 rifle that fires faster then any other period weapons (armies still use muzzle loaders and pikes). has 2 firing modes, Single and Rapid.
+Cannon; a massive rifle chambered in 1-inch shells capable of tearing through even the strongest of steels. Bolt action and can use different loads.
+Handgun; a smaller gun, able to be held in one hand and uses an internal magazine, loads with strips and chambered for .45 Special (more like Colt .45).
+Gunner's Stance; different form the player can use to improve various stats.
+Army Of One;
+ 	An Outlaw is someone who doesn't abide by laws, so why shouldn't they strap a mechanism that can deploy 2 extra pairs of arms (totaling 6 individual arms) and turn their
+themselves into a tank armed with options for weapons, ranging from cannons, machine guns, mortars, and even chemical weapons like gas. Jumping is entirely out of the question when in this form, and the player is immune
+almost all enemy attacks until they fuel runs out.
+Arachnoid;
+ 	Alternatively the player can use these extra limbs as a passive to be able to hold small arms and various melee weapons to quickly tear through hordes of enemies, but the player is exposed to almost all forms of damage.
+
+= Man-At-Arms
+Lore-
+ 	An esteemed warrior who is one of the last righteous few standing up for even the lowest members of society, putting honor before loyalty to a leader. Born from a small Homestead far from the hustle and bustle of the
+city, taught how to live off the land from a young age, and now living in a society where the pillars of feudalism are collapsing and a new age rapidly encroaching, faster then ever perceived. Kings now exiled, and now men of
+a new age lead in a Republic dedicated to allowing people of all branches of civilization to climb the ladders of society. Or so they say, men of this "New Age" oppress the people in the bottom of the barrel, frequently using
+their wealth and influence to force government to keep people out of it and get themselves in. It is your duty to defend the honor of Man, beyond the shackles of loyalty, ties to no king, no President, no leader, only a blood
+oath to your ancestors, and a blade forged in the fires of a time long past in one hand, and a so called "Gun" in the other, only will you let yourself rest once these people come face to face with justice.
+
+Weapons/Specials-
+Ancestral Blade; A blade that is as ancient as your people, and a last of it's kind, much like you, the last of your cast, and the last of your people, make your mark, maintain it and ensure it's survival.
+Bolt Pistol; A new pistol chambered in a massive .75 long, you've had it for about a year now and the recoil has finally come manageable, use it along side your sword to create brutal combos.
+Various armors; You will start out with simple garb like that of Gambesons and light plate armours
+Armor Bygone; A unique set of armor attainable after proving yourself to your mentor's spirit, virtually indestructible, impervious to corrosion, and blessed by the creator.
+Justice For All;
+ 	The scales of Justice have been imbalanced beyond any previous age, you swore a blood oath with your ancestors, letting it drain until nearly dying, a millennium's worth of wrath and disdain for the corruption of these
+false idols, oppression and rage become unleashed in one moment, the flesh of these bastards, your canvas, and the sword is your brush, the player will be presented with a window where they can input slices through the
+arrow keys, or alternatively make a custom prefab (like different forms) and use that in combat.
+
+= Construct
+Lore-
+ 	A being out of it's time, far more advanced then any organism before it, some say you should be enslaved because you're but an "Automaton", but you have flesh like them, you breath air, and even consume food and water.
+What is your purpose? To observe? Or are you destined for something far beyond even your understanding. You know your home is a humble cottage, but deep in it's cellar you are putting together your greatest inquiry yet,
+"What am I?". Are you a being from an Ancient time made as an experiment to see how far people could go in the pursuit of creating life? Or something else...
+
+Weapons/Specials
+The Art of Breathing; Upon breathing and filling up your power bar you can unleash a barrage of combos that can be customized.
+Turquoise Overclock; Unleash the fury of a storm by generating immense amounts of electricity in a single move (this may result in you passing out from exhaustion).
+Crimson Burnout; Arms are turned into a catalyst for a fire ball and upon swinging it throws a ball of flame up to 100 meters
+Rapid Acceleration; use a customizable steel ball or cylinder that rapidly gains speed and can be shot at a speed that penetrates through even the most dense of metals.
+Primordial Being;
+ 	Finally unlocking what you truly are means sacrificing yourself to save others, upon becoming the Perfect Being, you gain the ability of manipulating various materials, liquids, solids, or otherwise,
+you also gain the ability to manipulate your form and cross the boundaries that separate mortals and the gods.

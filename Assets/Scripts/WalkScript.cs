@@ -29,6 +29,9 @@ public class WalkScript : MonoBehaviour
         direction.y = rb.linearVelocity.y;
 
         rb.linearVelocity = direction;
+
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
     public void Move(InputAction.CallbackContext ctx)
