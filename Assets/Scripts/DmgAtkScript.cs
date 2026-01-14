@@ -2,6 +2,9 @@ using UnityEngine;
 
 public class DmgAtkScript : MonoBehaviour
 {
+    public bool hasWeapon;
+    public float atkDmg;
+    public int atkSpd;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {

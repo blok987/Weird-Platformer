@@ -23,13 +23,13 @@ public class WalkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // takes the local direction of the player and camera and uses 
+        // Takes player camera and determines player vector2 with it
         Vector3 direction = cam.transform.forward * Walk.y + cam.transform.right * Walk.x;
         direction *= MoveSpeed;
         direction.y = rb.linearVelocity.y;
 
         rb.linearVelocity = direction;
-
+        //Hides Mouse at the centre of the screen 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
