@@ -13,7 +13,7 @@ public class WalkScript : MonoBehaviour
     private bool IsSprint;
     public int Sprint;
     private Vector2 Walk;
-
+    private Vector2 Direction;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -27,9 +27,14 @@ public class WalkScript : MonoBehaviour
         Vector3 direction = cam.transform.forward * Walk.y + cam.transform.right * Walk.x;
         direction *= MoveSpeed;
         direction.y = rb.linearVelocity.y;
-
         rb.linearVelocity = direction;
-        //Hides Mouse at the centre of the screen 
+        
+        // Takes input from WASD and determines transform rotation of the player
+        transform.forward = new(rb.linearVelocity.x, 0, rb.linearVelocity.z);
+        
+        // Keeps player model facing most recent wasd input (E.g. Player press A, player stays facing local direct of A)
+
+        // Hides Mouse at the centre of the screen 
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
