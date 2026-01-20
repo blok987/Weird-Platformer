@@ -35,7 +35,7 @@ and save society from this brutal period of enslavement and rapid downfall. They
 
 Weapons/Specials-
 Auto Rifle; a custom made .45-70 rifle that fires faster then any other period weapons (armies still use muzzle loaders and pikes). has 2 firing modes, Single and Rapid.
-Cannon; a massive rifle chambered in 1-inch shells capable of tearing through even the strongest of steels. Bolt action and can use different loads.
+Cannon; a massive rifle chambered in 2-inch shells capable of tearing through even the strongest of steels. Bolt action and can use different loads.
 Handgun; a smaller gun, able to be held in one hand and uses an internal magazine, loads with strips and chambered for .45 Special (more like Colt .45).
 Gunner's Stance; different form the player can use to improve various stats.
 Army Of One;
@@ -50,13 +50,13 @@ Lore-
  	An esteemed warrior who is one of the last righteous few standing up for even the lowest members of society, putting honor before loyalty to a leader. Born from a small Homestead far from the hustle and bustle of the
 city, taught how to live off the land from a young age, and now living in a society where the pillars of feudalism are collapsing and a new age rapidly encroaching, faster then ever perceived. Kings now exiled, and now men of
 a new age lead in a Republic dedicated to allowing people of all branches of civilization to climb the ladders of society. Or so they say, men of this "New Age" oppress the people in the bottom of the barrel, frequently using
-their wealth and influence to force government to keep people out of it and get themselves in. It is your duty to defend the honor of Man, beyond the shackles of loyalty, ties to no king, no President, no leader, only a blood
-oath to your ancestors, and a blade forged in the fires of a time long past in one hand, and a so called "Gun" in the other, only will you let yourself rest once these people come face to face with justice.
+their wealth and influence to force government to keep people out of it and get themselves in. It is your duty to defend the honor of Man, beyond the shackles of loyalty, ties to no king, no President, no leader, only a blood 
+oath to your ancestors, and a blade forged in the fires of a time long past in one hand, and a gun in the other, only will you let yourself rest once these people come face to face with justice.
 
 Weapons/Specials-
 Ancestral Blade; A blade that is as ancient as your people, and a last of it's kind, much like you, the last of your cast, and the last of your people, make your mark, maintain it and ensure it's survival.
 Bolt Pistol; A new pistol chambered in a massive .75 long, you've had it for about a year now and the recoil has finally come manageable, use it along side your sword to create brutal combos.
-Various armors; You will start out with simple garb like that of Gambesons and light plate armours
+Various armors; You will start out with simple armour like that of Gambesons and light plate armours
 Armor Bygone; A unique set of armor attainable after proving yourself to your mentor's spirit, virtually indestructible, impervious to corrosion, and blessed by the creator.
 Justice For All;
  	The scales of Justice have been imbalanced beyond any previous age, you swore a blood oath with your ancestors, letting it drain until nearly dying, a millennium's worth of wrath and disdain for the corruption of these
@@ -65,7 +65,7 @@ arrow keys, or alternatively make a custom prefab (like different forms) and use
 
 = Construct
 Lore-
- 	A being out of it's time, far more advanced then any organism before it, some say you should be enslaved because you're but an "Automaton", but you have flesh like them, you breath air, and even consume food and water.
+ 	A being out of it's time, far more advanced then any organism before it, some say you should be enslaved because you're but an "Automaton", but you feel like you are fleshed like them, you breath air, and even consume food and water.
 What is your purpose? To observe? Or are you destined for something far beyond even your understanding. You know your home is a humble cottage, but deep in it's cellar you are putting together your greatest inquiry yet,
 "What am I?". Are you a being from an Ancient time made as an experiment to see how far people could go in the pursuit of creating life? Or something else...
 
