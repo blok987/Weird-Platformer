@@ -2,10 +2,11 @@ using UnityEngine;
 
 public class DmgAtkScript : MonoBehaviour
 {
-    public bool hasWeapon;
-    public float atkDmg;
-    public int atkSpd;
+    public bool HasWeapon;
+    public float AtkDmg;
+    public int AtkSpd;
     public Vector3 WeaponType;
+    public bool DmgGive;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -21,4 +22,13 @@ public class DmgAtkScript : MonoBehaviour
     {
         Gizmos.DrawWireCube(transform.position, WeaponType);
     }
+    private void OnCollisionEnter(Collision collision)
+    {
+        
+    }
+    private void OnCollisionStay(Collision collision)
+    {
+        //OnCollisionStay
+    }
+
 }
