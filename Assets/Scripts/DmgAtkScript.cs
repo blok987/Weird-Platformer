@@ -24,11 +24,11 @@ public class DmgAtkScript : MonoBehaviour
     }
     private void OnCollisionEnter(Collision collision)
     {
-        
+       
     }
-    private void OnCollisionStay(Collision collision)
+    private void OnCollisionStay(Collision collison)
     {
-        //OnCollisionStay
+        Debug.Log("Hit");
     }
 
 }
