@@ -814,7 +814,7 @@ Rigidbody:
   m_ImplicitTensor: 1
   m_UseGravity: 1
   m_IsKinematic: 0
-  m_Interpolate: 0
+  m_Interpolate: 1
   m_Constraints: 112
   m_CollisionDetection: 0
 --- !u!65 &730039272
@@ -925,7 +925,7 @@ MonoBehaviour:
   MoveSpeed: 6
   SprintSpeed: 6
   cam: {fileID: 330585545}
-  Sprint: 0
+  Sprint: 9
 --- !u!114 &730039277
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1068,10 +1068,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4727099084bc2454f80f9507832d6144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hasWeapon: 0
-  atkDmg: 0
-  atkSpd: 0
+  HasWeapon: 0
+  AtkDmg: 0
+  AtkSpd: 0
   WeaponType: {x: 2, y: 0.5, z: 2}
+  DmgGive: 0
 --- !u!1 &778168011
 GameObject:
   m_ObjectHideFlags: 0
