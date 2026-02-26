@@ -1097,11 +1097,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4727099084bc2454f80f9507832d6144, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HasWeapon: 0
-  AtkDmg: 0
-  AtkSpd: 0
-  DmgGive: 0
-  WeaponLength: 0
+  DMG: 0
+  WeaponReach: 0
   WeaponType: {x: 2, y: 0.5, z: 2}
   Enemy:
     serializedVersion: 2
