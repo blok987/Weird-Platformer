@@ -315,6 +315,9 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: eb7d25d27f5d6674fbf18f2bd80af810, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 928162251}
     - targetCorrespondingSourceObject: {fileID: 8164078558771037576, guid: eb7d25d27f5d6674fbf18f2bd80af810, type: 3}
       insertIndex: -1
       addedObject: {fileID: 868000107}
@@ -799,6 +802,7 @@ GameObject:
   - component: {fileID: 730039277}
   - component: {fileID: 730039276}
   - component: {fileID: 730039278}
+  - component: {fileID: 730039279}
   m_Layer: 0
   m_Name: Player
   m_TagString: Untagged
@@ -1103,6 +1107,24 @@ MonoBehaviour:
   Enemy:
     serializedVersion: 2
     m_Bits: 8
+--- !u!114 &730039279
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 730039270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd351bb8f1d6d4428c45788ee71ad81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatsHealthLvL: 0
+  MaxHealth: 1
+  AtMaxHealth: 0
+  AtMinHealth: 0
+  IsPlayer: 1
+  NotPlayer: 0
 --- !u!1 &778168011
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,6 +1523,29 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.04, y: 6.82859, z: 3.214755}
   m_Center: {x: 0, y: 2.414295, z: 0.000020503998}
+--- !u!1 &928162249 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: eb7d25d27f5d6674fbf18f2bd80af810, type: 3}
+  m_PrefabInstance: {fileID: 221608792}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &928162251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 928162249}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: afd351bb8f1d6d4428c45788ee71ad81, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  StatsHealthLvL: 0
+  MaxHealth: 0
+  AtMaxHealth: 0
+  AtMinHealth: 0
+  IsPlayer: 0
+  NotPlayer: 0
 --- !u!1 &1172158917
 GameObject:
   m_ObjectHideFlags: 0
