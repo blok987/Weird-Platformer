@@ -31,10 +31,10 @@ public class StatsScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (IsPlayer == false && AtMinHealth == true);
-        {
+        //if (IsPlayer == false && AtMinHealth == true);
+        //{
             
-        }
+        //}
     
     }
     
