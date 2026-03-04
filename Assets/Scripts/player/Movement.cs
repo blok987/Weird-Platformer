@@ -110,6 +110,7 @@ public class Movement : MonoBehaviour
         if (enabled == false)
             return;
 
+        //
         moveInput = context.ReadValue<Vector2>();
         Debug.Log($"Move input: {moveInput}");
     }

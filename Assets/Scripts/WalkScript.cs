@@ -4,7 +4,7 @@ using UnityEngine.Rendering;
 
 public class WalkScript : MonoBehaviour
 {
-    public Rigidbody rb;
+    public CharacterController cc;
     public float JumpHeight;
     public float MoveSpeed;
     public float SprintSpeed;
@@ -12,8 +12,8 @@ public class WalkScript : MonoBehaviour
     private bool IsGrounded;
     private bool IsSprint;
     public int Sprint;
-    private Vector2 Walk;
-    private Vector2 Direction;
+    private Vector3 Walk;
+    private Vector3 DirectionInp;
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
@@ -23,49 +23,14 @@ public class WalkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        // Takes player camera and determines player vector2 with it
-        Vector3 direction = cam.transform.forward * Walk.y + cam.transform.right * Walk.x;
-        direction *= MoveSpeed;
-        direction.y = rb.linearVelocity.y;
-        rb.linearVelocity = direction;
         
-        // Takes input from WASD and determines transform rotation of the player
-        transform.forward = new(rb.linearVelocity.x, 0, rb.linearVelocity.z);
-        
-        // Keeps player model facing most recent wasd input (E.g. Player press A, player stays facing local direct of A)
-
-        // Hides Mouse at the centre of the screen 
-        Cursor.lockState = CursorLockMode.Locked;
-        Cursor.visible = false;
     }
-
-    public void Move(InputAction.CallbackContext ctx)
+    public void OnMove(InputAction.CallbackContext context)
     {
-        Walk = ctx.ReadValue<Vector2>();
-    }
+        if (enabled == false)
+            return;
 
-    public void Jump(InputAction.CallbackContext ctx)
-    {
-        if (ctx.performed && IsGrounded)
-        {
-            rb.AddForce(0, JumpHeight, 0);
-
-        }
-    }
-
-    private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            IsGrounded = true; 
-        }
-    }
-
-    private void OnCollisionExit(Collision collision)
-    {
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            IsGrounded = false;
-        }
+        DirectionInp = context.ReadValue<Vector2>();
+        Debug.Log($"Move input: {Walk}");
     }
 }
