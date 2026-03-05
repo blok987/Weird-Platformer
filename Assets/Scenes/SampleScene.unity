@@ -304,7 +304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15212339, y: -0.0000000034767504, z: 5.351231e-10, w: 0.98836154}
+  m_LocalRotation: {x: 0.15212339, y: -0.0000000034749565, z: 5.3484706e-10, w: 0.98836154}
   m_LocalPosition: {x: 0, y: 2.2552936, z: -7.152877}
   m_LocalScale: {x: 1.0015998, y: 0.9911172, z: 1.0189418}
   m_ConstrainProportionsScale: 0
@@ -749,7 +749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821812813}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15212339, y: -0.0000000034767504, z: 5.351222e-10, w: 0.98836154}
+  m_LocalRotation: {x: 0.15212339, y: -0.0000000031634215, z: -0.0000000014892304, w: 0.98836154}
   m_LocalPosition: {x: 0, y: 2.2552936, z: -7.152877}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1045,6 +1045,7 @@ GameObject:
   - component: {fileID: 2003374309}
   - component: {fileID: 2003374313}
   - component: {fileID: 2003374314}
+  - component: {fileID: 2003374315}
   m_Layer: 0
   m_Name: Jonni
   m_TagString: Untagged
@@ -1195,6 +1196,24 @@ MonoBehaviour:
     m_Bits: 4294967295
   Collider: {fileID: 2003374309}
   isCrouching: 0
+--- !u!114 &2003374315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003374308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7e29d460cb0d944184a41c2c23dcdcc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cc: {fileID: 2003374313}
+  JumpHeight: 0
+  MoveSpeed: 20000
+  SprintSpeed: 0
+  cam: {fileID: 330585545}
+  Sprint: 0
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

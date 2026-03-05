@@ -23,14 +23,32 @@ public class WalkScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        #region Movement Inputs
+        //Uses Character controller inputs to move
+        if (Input.GetKey(KeyCode.W))
+        {
+            cc.Move(transform.forward);
+        }
         
-    }
-    public void OnMove(InputAction.CallbackContext context)
-    {
-        if (enabled == false)
-            return;
+        if (Input.GetKey(KeyCode.S))
+        {
+            cc.Move(-transform.forward);
+        }
 
-        DirectionInp = context.ReadValue<Vector2>();
-        Debug.Log($"Move input: {Walk}");
+        if (Input.GetKey(KeyCode.D))
+        {
+            cc.Move(transform.right);
+        }
+
+        if (Input.GetKey(KeyCode.A))
+        {
+            cc.Move(-transform.right);
+        }
+        if (Input.GetKey(KeyCode.Space))
+        {
+            cc.Move(transform.up);
+        }
+        #endregion
     }
+
 }
