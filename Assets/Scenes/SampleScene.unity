@@ -304,7 +304,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 330585543}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15212339, y: -0.0000000034749565, z: 5.3484706e-10, w: 0.98836154}
+  m_LocalRotation: {x: 0.15212335, y: -0.000000031682184, z: 0.000000004876353, w: 0.98836154}
   m_LocalPosition: {x: 0, y: 2.2552936, z: -7.152877}
   m_LocalScale: {x: 1.0015998, y: 0.9911172, z: 1.0189418}
   m_ConstrainProportionsScale: 0
@@ -749,7 +749,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 821812813}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.15212339, y: -0.0000000031634215, z: -0.0000000014892304, w: 0.98836154}
+  m_LocalRotation: {x: 0.15212335, y: -0.000000030783383, z: -9.632468e-10, w: 0.98836154}
   m_LocalPosition: {x: 0, y: 2.2552936, z: -7.152877}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1044,7 +1044,6 @@ GameObject:
   - component: {fileID: 2003374310}
   - component: {fileID: 2003374309}
   - component: {fileID: 2003374313}
-  - component: {fileID: 2003374314}
   - component: {fileID: 2003374315}
   m_Layer: 0
   m_Name: Jonni
@@ -1171,31 +1170,6 @@ CharacterController:
   m_SkinWidth: 0.08
   m_MinMoveDistance: 0.001
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &2003374314
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2003374308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 37c9bd10eabe81d4b9dbe7420da09d7a, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerCamera: {fileID: 330585546}
-  speed: 5
-  sprintSpeed: 10
-  jumpheight: 2
-  gravity: -9.8
-  shouldRotateTowardsMovement: 1
-  standHeight: 2
-  crouchHeight: 0.75
-  standUpBlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  Collider: {fileID: 2003374309}
-  isCrouching: 0
 --- !u!114 &2003374315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1209,11 +1183,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cc: {fileID: 2003374313}
-  JumpHeight: 0
-  MoveSpeed: 20000
-  SprintSpeed: 0
   cam: {fileID: 330585545}
+  JumpHeight: 5
+  MoveSpeed: 0.05
+  SprintSpeed: 0
+  IsGrounded: 1
+  IsSprint: 0
   Sprint: 0
+  gravity: -9.8
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
