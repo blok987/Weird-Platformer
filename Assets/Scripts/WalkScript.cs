@@ -44,25 +44,30 @@ public class WalkScript : MonoBehaviour
 
         #region Movement Inputs
         //Uses Character controller inputs to move
+        if (Input.GetKey(KeyCode.LeftShift))
+        {
+            Movement = transform.forward * SprintSpeed;
+        }
+
         if (Input.GetKey(KeyCode.W))
         {
-            Movement += transform.forward.normalized * MoveSpeed;
+            Movement += transform.forward * MoveSpeed * Time.deltaTime;
             
         }
         
         if (Input.GetKey(KeyCode.S))
         {
-            Movement += -transform.forward.normalized * MoveSpeed;
+            Movement -= transform.forward * MoveSpeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            Movement += transform.right.normalized * MoveSpeed;
+            Movement += transform.right * MoveSpeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            Movement += -transform.right.normalized * MoveSpeed;
+            Movement -= transform.right * MoveSpeed * Time.deltaTime;
         }
 
         Movement.y = 0;
@@ -72,6 +77,7 @@ public class WalkScript : MonoBehaviour
             YVelocity = JumpHeight;
             IsGrounded = false;
         }
+        
         IsGrounded = true;
         cc.Move(Movement + Vector3.up * YVelocity * Time.deltaTime);
         #endregion

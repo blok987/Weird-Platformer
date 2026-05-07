@@ -415,7 +415,7 @@ Light:
   m_Enabled: 1
   serializedVersion: 11
   m_Type: 1
-  m_Color: {r: 0.2067459, g: 0.022694914, b: 0.2830189, a: 1}
+  m_Color: {r: 0.9796312, g: 0.9292453, b: 1, a: 1}
   m_Intensity: 2
   m_Range: 10
   m_SpotAngle: 30
@@ -459,7 +459,7 @@ Light:
   m_LightShadowCasterMode: 0
   m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
-  m_ColorTemperature: 3491
+  m_ColorTemperature: 5717
   m_UseColorTemperature: 1
   m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
   m_UseBoundingSphereOverride: 0
@@ -1045,6 +1045,7 @@ GameObject:
   - component: {fileID: 2003374309}
   - component: {fileID: 2003374313}
   - component: {fileID: 2003374315}
+  - component: {fileID: 2003374316}
   m_Layer: 0
   m_Name: Jonni
   m_TagString: Untagged
@@ -1185,12 +1186,34 @@ MonoBehaviour:
   cc: {fileID: 2003374313}
   cam: {fileID: 330585545}
   JumpHeight: 5
-  MoveSpeed: 0.05
-  SprintSpeed: 0
+  MoveSpeed: 5
+  SprintSpeed: 10
   IsGrounded: 1
   IsSprint: 0
   Sprint: 0
   gravity: -9.8
+--- !u!64 &2003374316
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003374308}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 5
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
