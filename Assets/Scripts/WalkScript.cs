@@ -1,4 +1,5 @@
 using Unity.Android.Gradle.Manifest;
+using Unity.Cinemachine;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Rendering;
@@ -8,7 +9,8 @@ public class WalkScript : MonoBehaviour
 
     public CharacterController cc;
     public Camera cam;
-    
+    public int CameraFOV = 80;
+
     public float JumpHeight;
     public float MoveSpeed = 5;
     public float SprintSpeed;
@@ -17,9 +19,11 @@ public class WalkScript : MonoBehaviour
     [SerializeField] private bool IsSprint;
     [SerializeField] private int Sprint;
     [SerializeField] private float gravity = -9.8f;
+    [SerializeField] private CinemachineOrbitalFollow OrbFollow; 
 
     private Vector3 Walk;
     private Vector3 DirectionInp;
+    private Vector3 Lookdirection;
     private float YVelocity;
 
 
@@ -36,38 +40,40 @@ public class WalkScript : MonoBehaviour
     {
         YVelocity += gravity * Time.deltaTime;
 
-        Vector3 CameraRotation = Camera.main.transform.forward;
-        CameraRotation.y  = 0;
-        transform.forward = CameraRotation;
+  
 
         Vector3 Movement = default;
 
         #region Movement Inputs
         //Uses Character controller inputs to move
-        if (Input.GetKey(KeyCode.LeftShift))
+       
+        //player sprinting and forward strafe
+        if (Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.LeftShift)))
         {
-            Movement = transform.forward * SprintSpeed;
-        }
+            Movement += Camera.main.transform.forward * SprintSpeed * Time.deltaTime;
+            Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, CameraFOV + 20, Time.deltaTime * 5);
 
-        if (Input.GetKey(KeyCode.W))
+        }
+        else if (Input.GetKey(KeyCode.W))
         {
-            Movement += transform.forward * MoveSpeed * Time.deltaTime;
-            
+            Movement += Camera.main.transform.forward * MoveSpeed * Time.deltaTime;
+            Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, CameraFOV, Time.deltaTime * 5);
         }
         
+        //strafe back
         if (Input.GetKey(KeyCode.S))
         {
-            Movement -= transform.forward * MoveSpeed * Time.deltaTime;
+            Movement -= Camera.main.transform.forward * MoveSpeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.D))
         {
-            Movement += transform.right * MoveSpeed * Time.deltaTime;
+            Movement += Camera.main.transform.right * MoveSpeed * Time.deltaTime;
         }
 
         if (Input.GetKey(KeyCode.A))
         {
-            Movement -= transform.right * MoveSpeed * Time.deltaTime;
+            Movement -= Camera.main.transform.right * MoveSpeed * Time.deltaTime;
         }
 
         Movement.y = 0;
@@ -78,9 +84,29 @@ public class WalkScript : MonoBehaviour
             IsGrounded = false;
         }
         
+        if (Input.GetMouseButton(1))
+        {
+            Vector3 CameraRotation = Camera.main.transform.forward;
+            CameraRotation.y = 0;
+            Lookdirection = CameraRotation;
+        }
+        else if (Movement.magnitude > 0)
+        {
+            Lookdirection = Movement;
+        }
+
+        float MouseWheel = Input.GetAxis("Mouse ScrollWheel");
+        if (MouseWheel != 0) { 
+         OrbFollow.Radius -= MouseWheel;
+        }
+
+        transform.forward = Vector3.Slerp(transform.forward, Lookdirection, Time.deltaTime * 10);
+
         IsGrounded = true;
+        
         cc.Move(Movement + Vector3.up * YVelocity * Time.deltaTime);
         #endregion
+
     }
 
 }
