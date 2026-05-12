@@ -51,7 +51,7 @@ public class WalkScript : MonoBehaviour
         if (Input.GetKey(KeyCode.W) && (Input.GetKey(KeyCode.LeftShift)))
         {
             Movement += Camera.main.transform.forward * SprintSpeed * Time.deltaTime;
-            Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, CameraFOV + 20, Time.deltaTime * 5);
+            Camera.main.fieldOfView = Mathf.Lerp(Camera.main.fieldOfView, CameraFOV + 60, Time.deltaTime * 5);
 
         }
         else if (Input.GetKey(KeyCode.W))
