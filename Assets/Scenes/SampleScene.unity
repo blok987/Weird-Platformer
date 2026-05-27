@@ -1481,6 +1481,7 @@ GameObject:
   - component: {fileID: 2003374313}
   - component: {fileID: 2003374315}
   - component: {fileID: 2003374316}
+  - component: {fileID: 2003374317}
   m_Layer: 0
   m_Name: Jonni
   m_TagString: Untagged
@@ -1578,7 +1579,7 @@ CharacterController:
   m_Enabled: 1
   serializedVersion: 3
   m_Height: 2
-  m_Radius: 0.5
+  m_Radius: 0.507185
   m_SlopeLimit: 45
   m_StepOffset: 0.3
   m_SkinWidth: 0.08
@@ -1629,6 +1630,24 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10208, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &2003374317
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2003374308}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4727099084bc2454f80f9507832d6144, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DMG: 0
+  WeaponReach: 0
+  WeaponType: {x: 3, y: 0.5, z: 3}
+  Enemy:
+    serializedVersion: 2
+    m_Bits: 8
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

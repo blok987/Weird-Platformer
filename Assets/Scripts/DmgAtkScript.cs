@@ -30,7 +30,7 @@ public class DmgAtkScript : MonoBehaviour
             {
                 if (hit.collider != null)
                 {
-                    
+                    Debug.Log("Hit");
                 }
             }
         }
