@@ -38,7 +38,7 @@ public class AITarget : MonoBehaviour
         {
             for (int i = 0; i < points.Length; i++)
             {
-                Gizmos.DrawWireSphere(points[i].position, indexDist);
+                Gizmos.DrawWireCube(points[i].position, Vector3.one * indexDist);
             }
         }
     }
