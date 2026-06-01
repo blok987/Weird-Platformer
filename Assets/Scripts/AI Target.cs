@@ -4,10 +4,12 @@ using UnityEngine.AI;
 public class AITarget : MonoBehaviour
 {
     private int index;
-    [SerializeField] private float indexDist = 1f;
-    
-    public Transform[] points;
 
+    [SerializeField] private float indexDist = 1f;
+    public float sightRange = 10f;
+
+    public Transform[] points;
+    [SerializeField] RaycastHit LineOfSight;
     private NavMeshAgent agent;
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
@@ -40,6 +42,9 @@ public class AITarget : MonoBehaviour
             {
                 Gizmos.DrawWireCube(points[i].position, Vector3.one * indexDist);
             }
+        }
+        {
+            Gizmos.DrawRay(transform.position, transform.forward * sightRange);
         }
     }
 }
