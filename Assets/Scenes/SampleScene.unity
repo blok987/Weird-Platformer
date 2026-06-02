@@ -338,7 +338,7 @@ GameObject:
   - component: {fileID: 330585544}
   - component: {fileID: 330585547}
   - component: {fileID: 330585548}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
@@ -507,7 +507,7 @@ GameObject:
   - component: {fileID: 377846991}
   - component: {fileID: 377846990}
   - component: {fileID: 377846989}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Cube
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -944,7 +944,7 @@ GameObject:
   - component: {fileID: 821812822}
   - component: {fileID: 821812823}
   - component: {fileID: 821812820}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: CinemachineCamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1274,6 +1274,10 @@ MonoBehaviour:
   - {fileID: 1956476584}
   - {fileID: 1190829887}
   - {fileID: 160030636}
+  NotPlayer:
+    serializedVersion: 2
+    m_Bits: 55
+  Player: {fileID: 2003374308}
 --- !u!1 &901450736
 GameObject:
   m_ObjectHideFlags: 0
@@ -1510,7 +1514,7 @@ GameObject:
   - component: {fileID: 2003374315}
   - component: {fileID: 2003374316}
   - component: {fileID: 2003374317}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Jonni
   m_TagString: Untagged
   m_Icon: {fileID: 0}

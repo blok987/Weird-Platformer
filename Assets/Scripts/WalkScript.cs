@@ -96,7 +96,8 @@ public class WalkScript : MonoBehaviour
         }
 
         float MouseWheel = Input.GetAxis("Mouse ScrollWheel");
-        if (MouseWheel != 0) { 
+        if (MouseWheel != 0) 
+        { 
          OrbFollow.Radius -= MouseWheel;
         }
 
