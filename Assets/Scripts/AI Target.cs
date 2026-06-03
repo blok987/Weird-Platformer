@@ -72,7 +72,7 @@ public class AITarget : MonoBehaviour
         }
         //Line of Sight
         {
-            Gizmos.DrawRay(transform.position, transform.forward * sightRange);
+            Gizmos.DrawLine(transform.position, Player.transform.position);
         }
     }
 }
